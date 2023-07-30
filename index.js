@@ -21,9 +21,6 @@ const blogPostRoutes = require('./routes/blogPostRoutes');
 // Register routes
 app.use('/api/users', userRoutes);
 app.use('/api/posts', blogPostRoutes);
-app.get('/', (req, res) => {
-  res.send('Hey this is my API running 🥳')
-})
 
 // Start the server
 const PORT = 4000;
@@ -38,5 +35,5 @@ app.get('/', (req, res) => {
   app.get('/about', (req, res) => {
     res.send('This is my about route..... ')
   })
-  
+
 module.exports = app
